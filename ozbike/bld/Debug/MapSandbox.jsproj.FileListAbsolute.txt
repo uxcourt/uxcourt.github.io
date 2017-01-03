@@ -1,0 +1,15 @@
+d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bin\Debug\ReverseMap\resources.pri
+d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bin\Debug\AppxManifest.xml
+d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bin\Debug\MapSandbox.build.appxrecipe
+d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bld\Debug\priconfig.xml
+d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bld\Debug\priconfig.xml.intermediate
+d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bld\Debug\layout.resfiles
+d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bld\Debug\layout.resfiles.intermediate
+d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bld\Debug\resources.resfiles
+d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bld\Debug\resources.resfiles.intermediate
+d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bld\Debug\pri.resfiles
+d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bld\Debug\pri.resfiles.intermediate
+d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bld\Debug\qualifiers.txt
+d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bld\Debug\qualifiers.txt.intermediate
+d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bld\Debug\ProjectArchitectures.txt

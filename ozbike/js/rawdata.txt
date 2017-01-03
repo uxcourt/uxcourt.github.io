@@ -1,0 +1,194 @@
+HELPFUL POWERSHELL COMMAND
+get-childitem -include "*_*" | rename-item -NewName {$_.name -replace '_', '-'}
+
+GPS COORDINATE CONVERSIONS
+https://www.fcc.gov/media/radio/dms-decimal
+
+20140922
+https://www.facebook.com/photo.php?fbid=10154584952600405
+
+
+https://www.facebook.com/court.crawford/videos/10154589281330405/
+https://www.facebook.com/court.crawford/posts/10154590989630405
+https://www.facebook.com/court.crawford/videos/10154591039155405/
+https://www.facebook.com/court.crawford/videos/10154591101940405/
+https://www.facebook.com/court.crawford/videos/10154591104435405/
+https://www.facebook.com/court.crawford/videos/10154591117755405/
+https://www.facebook.com/photo.php?fbid=10154591013040405
+https://www.facebook.com/photo.php?fbid=10154591044975405
+https://www.facebook.com/photo.php?fbid=10154591056530405
+https://www.facebook.com/photo.php?fbid=10154591059450405
+
+
+
+20140920-04-40-00	
+So many times today, the land reminded me of other places. Those farms south of Port Townsend, South Whidbey Island, Big Sur, Yachats, except this place is full of parrots and wombats. We saw five live koala bears in Otway National Park today. 
+
+Oz is amazing. We have spent 15 days touring and I know we have barely scratched the surface. It has been a great tour and we leave the bikes tomorrow, so no more exotic photos for a while..
+https://www.facebook.com/photo.php?fbid=10154576616190405
+https://www.facebook.com/photo.php?fbid=10154576918845405
+https://www.facebook.com/photo.php?fbid=10154577002205405
+https://www.facebook.com/photo.php?fbid=10154577003365405
+https://www.facebook.com/photo.php?fbid=10154577003945405
+https://www.facebook.com/photo.php?fbid=10154577003945405
+https://www.facebook.com/photo.php?fbid=10154577009105405
+https://www.facebook.com/photo.php?fbid=10154577014340405
+https://www.facebook.com/photo.php?fbid=10154577016535405
+https://www.facebook.com/photo.php?fbid=10154577016725405
+https://www.facebook.com/photo.php?fbid=10154577023025405
+https://www.facebook.com/photo.php?fbid=10154580302055405
+https://www.facebook.com/photo.php?fbid=10154577014340405
+https://www.facebook.com/photo.php?fbid=10154584916095405
+
+20140919
+https://www.facebook.com/photo.php?fbid=10154591129245405 https://www.facebook.com/pages/Port-Campbell-Victoria/105594429475359?ref=stream
+
+
+20140918-19-34-00
+Right now is the beginning of today not sucking. After those spectacular alpine roads, these flat straight highways are boring. Add in strong crosswinds, rain, Ian's grip heaters and headlight dying, and this morning won't be the fondest memory of the trip.
+https://www.facebook.com/Doppiozero-Pizzeria-Wine-Bar-172443749611901/
+https://www.facebook.com/photo.php?fbid=10154573401765405
+
+
+20140918-04-080-00
+	
+459 km today! From Tallangatta to Myrtleford, where we ate breakfast and I called David (the owner of the bikes) to let him know about a few issues that are developing. He learned our location and said we would be fools to pass up the chance to drive to Omeo over Mount Hotham. Ian and I decided to abandon our pursuit of the Black Spur road and heed David's advice. We dressed in every layer we had and made the spectacular climb. David was right. This road is the best we have ridden so far.
+
+For those who have asked me to stop and smell the roses, every km of the road through the wilderness was a biker's bouquet.
+
+We had lunch in Omeo, where the proprietor let us know the road we were on had been voted the #5 best road on the planet for motorcycles.
+
+By the time we got to Rosedale, we were tired and hungry. Our camp guide book recommended going to the pub. We did but it felt haunted so after we had dinner and played a game of pool, we made our way to warm beds and hot showers in Traralgan.
+
+This sets us up well for the final two days of riding on the Great Ocean Road. A biker we camped next to in Killalea assured us it wasn't to be missed and gave us a tip about a campsite which is not in our book. 
+
+It is hard to believe there are only two full days of riding left on this trip.
+https://www.facebook.com/photo.php?fbid=10154570509070405
+https://www.facebook.com/photo.php?fbid=10154570513120405
+https://www.facebook.com/photo.php?fbid=10154570516220405
+https://www.facebook.com/photo.php?fbid=10154572915915405
+https://www.facebook.com/photo.php?fbid=10154570516220405
+
+20140917-13-36-01.MOV, Climbing Mt. Hotham. No guard rails
+
+20140917-16-11-00
+Good hot breakfast after a freezing ride from Tallangatta. This morning we conducted a risky experiment and learned Ian's bike will go 10km on empty.
+https://www.facebook.com/pages/Alpine-Gate-Cafe/168115186540519
+https://www.facebook.com/photo.php?fbid=10154567228645405
+https://www.facebook.com/photo.php?fbid=10154567231770405
+https://www.facebook.com/photo.php?fbid=10154567232575405
+https://www.facebook.com/photo.php?fbid=10154567233485405
+https://www.facebook.com/photo.php?fbid=10154567235650405
+https://www.facebook.com/photo.php?fbid=10154567237320405
+https://www.facebook.com/photo.php?fbid=10154567238535405
+https://www.facebook.com/photo.php?fbid=10154567238980405
+https://www.facebook.com/photo.php?fbid=10154567240505405
+https://www.facebook.com/photo.php?fbid=10154567243135405
+https://www.facebook.com/photo.php?fbid=10154567243495405
+https://www.facebook.com/photo.php?fbid=10154567244710405
+https://www.facebook.com/photo.php?fbid=10154567248805405
+https://www.facebook.com/photo.php?fbid=10154567249475405
+https://www.facebook.com/photo.php?fbid=10154569234340405
+https://www.facebook.com/photo.php?fbid=10154569815755405
+https://www.facebook.com/photo.php?fbid=10154569820845405
+
+
+Sep 16, 2014 4:42am
+Today's ride started near Shellharbour. We followed the coastal highway until Narooma, the cut inland through Cobargo, where the thunderstorm hit us full force. My Aerostitch suit has gotten me safe and dry through many miles, but it has developed a single leak... in the crotch. Tomorrow I'll try a polyethylene loincloth to see if I can keep my junk dry. We proceeded south to Bega, then hit the truly exquisite road up to Bemboka. In a day of great and inspiring vistas, this segment was mind blowing. The trip from Bemboka to Cooma was on a high mountain plateau. It reminded me of Wyoming.
+https://www.facebook.com/photo.php?fbid=10154564048660405
+https://www.facebook.com/photo.php?fbid=10154563804405405
+
+Sep 16, 2014 2:09am
+https://www.facebook.com/pages/Nebula-Motel/161947300483513
+427 km today. Did a big loop, through the thunderstorm and the deluge, up on to the high mountains. My windshield rattled loose. Everything that wasn't in Givi boxes got wet. We are warm and dry now, with a very generous Uruguayan proprietor. Cooma seems to be Australia's ski town.
+https://www.facebook.com/photo.php?fbid=10154564050005405
+https://www.facebook.com/photo.php?fbid=10154566356145405
+
+
+
+
+Sep 15, 2014 3:58am
+I think I skipped a detail about today. We rode 420 km.
+https://www.facebook.com/photo.php?fbid=10154563577505405
+https://www.facebook.com/photo.php?fbid=10154563184685405
+https://www.facebook.com/photo.php?fbid=10154563000335405
+
+Sep 15, 2014 2:00am
+Only rode 140 km today, but the middle 70 were amazing. From the Royal National Park to the Sea Cliff bridge were great riding and gorgeous scenery. The towns on the south end of the bridge reminded me a lot of Carmel, CA. Pristine private beaches punctuated by small cliffs. Shiny happy people picking their kids up from school.
+
+We started the day in Sydney, and I have to commend the designers and data providers of the Here apps from Nokia. Not only did Here Transit provide flawless navigation of the trains and busses, Here Drive made navigating Sydney roads calm and effortless. I just put in the ear buds and got where I need to go. I started the day at a BMW dealer: Procycles at Southworth. They made a very high quality repair to the power cable for the navigator, and also offered me a splitter so I could keep the phone powered up as well as navigate. 
+
+This setup allowed me to strap the Fuli camera to the front of the bike for some fun movies of Ian riding through the park.
+
+South of Wollongong was interesting for another reason: active steel mills. Obviously "free trade" agreements haven't eliminated a vital industry here.
+
+We are camped now in Killalea State Park, and it is like a private grassy plantation on the sea cliffs. Very friendly campers and staff here too. 
+https://www.facebook.com/photo.php?fbid=10154560827195405
+https://www.facebook.com/photo.php?fbid=10154560583680405
+https://www.facebook.com/photo.php?fbid=10154560434810405
+
+
+All in all, having a great time.
+
+
+Sep 14, 2014 3:59am
+https://www.facebook.com/pages/Ms-G/132810933450370
+Great mash up of Chinese, .Mexican, and Oz cuisines here, with a Mississippi soundtrack. The DJ seems to only be spinning artists from New Orleans, Memphis, and Chicago. Quite the anachronistic experience for being on the other side of the world from where that music originated.
+https://www.facebook.com/photo.php?fbid=10154561039740405
+https://www.facebook.com/court.crawford/videos/10154557344610405/
+https://www.facebook.com/photo.php?fbid=10154557342040405
+https://www.facebook.com/photo.php?fbid=10154556600260405
+https://www.facebook.com/photo.php?fbid=10154553588720405
+https://www.facebook.com/photo.php?fbid=10154553487585405
+
+
+
+
+Sep 13, 2014 8:57am
+
+
+
+
+Sep 12, 2014 9:21pm
+https://www.facebook.com/ShipInnSydney/
+
+
+Sep 12, 2014 1:36am
+https://www.facebook.com/highmountains/
+The highway through the Blue Mountains was also beautiful and fun to ride, but the low temperatures and fog today made it more of a ride of passage than a pure joy.
+
+http://sounds.bl.uk/Environment/Soundscapes/022M-W1CDR0000139-1000V0
+https://www.facebook.com/photo.php?fbid=10154552993000405
+https://www.facebook.com/photo.php?fbid=10154552946310405
+
+https://www.facebook.com/photo.php?fbid=10154552946130405
+https://www.facebook.com/photo.php?fbid=10154552945165405
+https://www.facebook.com/photo.php?fbid=10154550285525405
+https://www.facebook.com/photo.php?fbid=10154550287195405
+https://www.facebook.com/photo.php?fbid=10154549694515405 https://www.facebook.com/pages/Court-House-Pub/216387691711230?ref=stream
+
+
+https://www.facebook.com/photo.php?fbid=10154548553340405
+
+
+https://www.facebook.com/photo.php?fbid=10154546487300405
+
+Sep 10, 2014 7:31pm
+I have been taking pix with my Fuji X10 and not so many with the phone. There is only one 12v output on the bike, and I'm using it for the GPS instead of the phone. The phone takes too long to power on so I only reach for it when I lose Ian or when we take a longer break.
+https://www.facebook.com/photo.php?fbid=10154546171655405
+https://www.facebook.com/photo.php?fbid=10154545801165405
+https://www.facebook.com/photo.php?fbid=10154545801165405&set=a.10150637378135405.681188.738950404&type=1&theater
+
+
+https://soundcloud.com/court-crawford/tallangatta-dawn-3
+https://soundcloud.com/court-crawford/sets/tallangatta-dawn
+
+
+
+=====================
+
+https://www.facebook.com/court.crawford/media_set?set=a.10154590980530405.1073741835.738950404&type=3
+
+
+
+

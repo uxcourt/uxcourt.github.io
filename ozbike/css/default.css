@@ -1,0 +1,107 @@
+﻿html, body {
+  height: 100%;
+  margin: 0;
+  font-family:sans-serif
+}
+#map{
+  margin: 0;
+  width:34vw;height:100vh;
+  margin-left:66vw;
+  transition:width 1.5s;
+}
+#info{
+    position:absolute;
+    z-index:500;
+    background-color: rgba(255, 255, 255, 0.7);
+    top:2em;
+    left:10em;
+    padding:2em;
+    transition:all 1.5s;
+    width:44vw;
+    color:#333;
+}
+#appNav{
+    position:fixed;
+    z-index:501;
+    top:0;
+    left:0;
+    width:87px; 
+    transition:top 1.5s;
+    /*background-color:rgba(225,225,225,.6); */
+    }
+#NoStreet{
+    position:fixed;top:18px;left:61px;display:none;
+}
+#appNav.nostreet #NoStreet{
+    display:block;
+}
+#appNav.yesstreet #NoStreet{
+    display:none;
+}
+#pix{
+    position:relative;
+    top:-100vh;
+    height:100vh;
+    overflow:scroll;
+    z-index:499;
+    width:66vw;
+    transition:width 1.5s;
+
+}
+#date{
+    font-family:'serif';
+    font-style:italic;
+    font-weight:500;
+}
+.OneDigitID{
+    padding-left:.25em;
+}
+#pix img {
+    width:100%;
+}
+/*#info_view{left:0}*/
+#street_view{height:50vh;z-index:490}
+#notStreet {position:relative;top:-50vh;height:100vh;z-index:500;transition:top 1.5s}
+#info H1{margin-top:-.25em;margin-bottom:.25em;padding-right:1em;}
+#placeID{
+    position:relative;
+    top:7px;left:33px;
+
+}
+#placeIDbox{
+    position:absolute;
+    top:2em;
+    right:0;
+    width:80px;height:49px;
+    background-image: url('../images/spotlight-poi-dotless.png');
+    background-repeat: no-repeat;
+    overflow:visible;
+    background-position: 15px -11px;
+}
+#placeIDbox.camp{
+    background-image: url('../images/camping.png');
+    background-position: 16px -20px;
+}
+#placeIDbox.lodging{
+    background-image: url('../images/lodging.png');
+    background-position: 16px -18px;
+}
+#placeIDbox.route{
+    background-image: url('../images/route.png');
+        background-position: 15px -19px;
+}
+.customVid{position:relative}
+.overlayPlay{
+    position: absolute;
+    top: 30%;
+    left: 39%;
+    width:25%!important;
+    z-index:501;
+    display:block;
+}
+.caption{
+    display: inline-block;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+.ncaption{display:none;}

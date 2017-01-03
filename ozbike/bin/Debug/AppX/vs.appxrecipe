@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-3KUU3E0</Machine>
+    <WindowsUser>areyo</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>b569722a-ad65-4144-bb07-346f07b86cbc</PackageIdentityName>
+    <RegisteredManifestChecksum>C77510E1DF71644D951AC972918A21DEC7F6F2F211095F9ACEA5F341A2EDC9DB</RegisteredManifestChecksum>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-11-27T23:06:26.000</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\images\logo.scale-100.png">
+      <PackagePath>images\logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-22T05:19:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\images\smalllogo.scale-100.png">
+      <PackagePath>images\smalllogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-22T05:19:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-22T05:19:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\images\storelogo.scale-100.png">
+      <PackagePath>images\storelogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-22T05:19:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2016-10-20T23:15:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2016-10-20T23:51:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\MapSandbox\MapSandbox\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2016-11-27T23:06:26.000</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
