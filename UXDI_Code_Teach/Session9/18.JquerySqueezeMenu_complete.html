@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery dynamic header</title>
+    <style>
+        @media screen and (max-width:606px){
+            header ul{                
+                position:absolute;
+                right:5vw;
+                top:5vw;
+            }
+            header li {
+                font-size:.8rem;
+                list-style:none;
+                display:inline;
+            }       
+        }
+        @media screen and (min-width:607px){
+            header ul{
+                position:relative;
+                left:30vw;
+                top:-1rem;
+                margin-bottom:0;
+
+            }
+            header li {
+                font-size: 1rem;
+                padding:0 2vw;
+                list-style:none;
+                display:inline;
+        }
+
+        }
+        .bodyContent {
+            font-family: 'Avenir',  'Helvetica', 'san-serif';
+            padding-left:10vw;
+            padding-right: 10vw;
+            position:relative;
+            top:22vw;
+            
+        }
+        header {
+            background-color: #333; 
+            margin-bottom:0;
+            position:fixed;
+            top:0;left:0;right:0;
+            z-index:2;padding-top:20px;
+        }
+        body{
+            padding-top:0;
+            padding-left:0;
+            padding-right:0;
+            margin:0;
+        }
+        header img{
+            width:20vw;
+        }
+        header a {
+            color: #fff;
+        }
+
+        header ul{margin-top:0;}
+        #kitty{padding-left:10vw}
+        #deBug{height:3em;background-color: orange;}
+
+
+
+    </style>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+    <!--
+    this script allows for more of a sense of user responsiveness; an pre-set animation isn't triggered. Instead the height reacts to the user's use of the scroll bar. This was inspired by http://www.nbc.com/the-tonight-show
+
+    One issue remains. Because the scrollTop value is only pixels, once the document is scrolled, the header is no longer responsive.
+    -->
+    <script language="javascript">
+        //bind this function to the window scroll event
+        $(window).scroll(function () {
+            //$('#deBug').html($(document).scrollTop());
+            var dW = $(document).width()*.2;
+            //alert(dW);
+            //if document content has scrolled enough to reach the min-height of the header,
+            if ($(document).scrollTop() > dW-40) {    
+                //set the header to the min height, and size the image which automatically triggers the UL moving up. As the header is resized, ensure that the padding isn't clobbered.
+                $('#header').height(50) ;
+                $('#header').css('padding-bottom','1%') ;
+                $('#kitty').width(50);
+            }
+            //if instead the document has not scrolled, or has scrolled less than the min-height
+            else {
+                /*set the header to the viewport width minus the scroll value. 189 is the default height for a 13" macbook pro with the page full width. 
+
+                Further development could do the math to generate a vw something like this"
+                    var newWidth = yourElement.outerwidth / document.documentElement.clientWidth *100;
+                    yourElement.style.width = newWidth +'vw';
+                This is from http://stackoverflow.com/questions/28295072/how-can-i-convert-px-to-vw-in-javascript.*/
+
+                $('#header').height((dW)-$(document).scrollTop());
+                $('#header').css('padding-bottom','2%') ;
+                //and set the image to the correct width to allow the transition to be fluid
+                $('#kitty').width(dW+5-$(document).scrollTop());
+            }
+        });
+
+        //when the document is entirely loaded (ready), attach this function to it
+        $(document).ready(function(){
+            //bind this function to the click of any ID aL5. Now this function will execute when aL5 is clicked
+            $('#aL6').click(function(event){
+                    //override the default behavior for an A tag, in order that we might control the alignment of where the link scrolls to
+                    event.preventDefault();
+                    //animate the scrolling action, and make it scroll to 95 pixels above the target of the link; this is to prevent the header from hiding the content once the link is clicked. Take 1000 miliseconds to get there.
+                    $('html, body').animate({
+                        scrollTop: $("#L6").offset().top - 95
+                    }, 1000);
+            })
+            //repeat for all the other menu links
+            $('#aL4').click(function(event){
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $("#L4").offset().top - 95
+                    }, 1000);
+            })
+            $('#aL2').click(function(event){
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $("#L2").offset().top - 95
+                    }, 1000);
+            })
+            $('#aL0').click(function(event){
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $("#L0").offset().top - 95
+                    }, 1000);
+            })
+            //also animate the scroll back to the top, this time without any calcuations on the offset, so that the very top of the page is really loaded
+            $('.top').click(function(event){
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $("#top").offset().top
+                    }, 1000);
+            })
+        });
+    //as a reward for getting through all this code, here's a list of 50 different lorem ipsum generators. http://mashable.com/2013/07/11/lorem-ipsum/. Happy text panel filling!
+    </script>
+</head>
+<body>
+    <div id='top'>&nbsp;</div>
+    <header id='header'><img src="http://PLACEKITTEN.com/g/700/700" id="kitty"/>
+        <ul>
+            <li><a href="#L0" id="aL0">HIPSTER</a></li>
+            <li><a href="#L2" id="aL2">HILLBILLY</a></li>
+            <li><a href="#L4" id="aL4">GANGSTA</a></li>
+            <li><a href="#L6" id="aL6">ZOMBIE</a></li>
+        </ul>
+    </header>
+    <div class="bodyContent">
+        <p id="L0">Sriracha Bushwick heirloom, kogi meditation salvia cold-pressed tilde leggings farm-to-table gluten-free. Four loko tousled paleo Echo Park, twee +1 semiotics Bushwick cliche typewriter lo-fi pour-over VHS four dollar toast. Letterpress twee semiotics, tilde cold-pressed wayfarers Neutra meditation Kickstarter 3 wolf moon lo-fi mixtape normcore. Carles listicle tote bag, PBR&B ennui letterpress mustache. Put a bird on it authentic skateboard fanny pack, pug whatever brunch biodiesel health goth seitan actually VHS iPhone. Single-origin coffee pop-up yr freegan brunch irony. Cronut Williamsburg aesthetic shabby chic.</p>
+        <!--<div id="deBug"></div>-->
+        <p id="L1">Tofu gastropub art party next level. Scenester polaroid ennui, tilde food truck iPhone selvage. Slow-carb PBR cold-pressed, gentrify cred swag irony fashion axe. Scenester art party Pinterest, Wes Anderson sustainable post-ironic irony meditation yr food truck tattooed jean shorts direct trade cronut health goth. Hashtag tousled banh mi Williamsburg kogi single-origin coffee, Thundercats umami Bushwick tilde forage kale chips pop-up sriracha. Blue Bottle kitsch hella taxidermy try-hard, migas craft beer mlkshk stumptown heirloom Thundercats Pinterest. 3 wolf moon fingerstache flexitarian selvage Blue Bottle dreamcatcher.</p> 
+        <a href="#top" class='top'>top</a><br/>
+        <p id="L2">Ain't no lie poor boy weevil rambling five dollars hellhounds on my track scratching out dough the sooner I will marry the cuckoo constant sorrow. Troublin' mind! The buggies and the hacks all formed in line they call The Cannonball don't belong to you. Loved another man? Ain't laid an egg since way last spring Juney bug I woke next morning 'bout half past nine aces backed with eights. When I'm gone Uncle John, rye whiskey hang your head and cry. All you rounders in bed with a hog-eyed man cluck old hen! And I ain't comin' back run buried in the ground shady grove!</p>
+
+        <p id="L3">Work one day. Walking boss nine-pound hammer out in the kitchen o'er Jordan coming down the track standing on the corner soldier's joy, troublin' mind the cuckoo? Willie shady grove, troublin' mind rye whiskey, black as coal weevil lonesome hoecake in bed with a hog-eyed man! Run down to the river the other one round my girl Uncle John handsome and I ain't comin' back sun would never shine work one day hopalong, sugar baby hopalong fiddle turkey in the straw milked her in a gourd.</p>   
+        <a href="#top" class='top'>top</a><br/>
+        <p id="L4">Gizzle quizzle crunk. Donizzle ante. Maecenas placerat maurizzle bling bling lectus. Black izzle we gonna chung.  izzle tortizzle fo shizzle my nizzle tellivizzle crazy sheezy. Lorem ipsizzle dolor sizzle amet, consectetizzle for sure elizzle. Curabitur elizzle shit, crunk shut the shizzle up, for sure stuff, cool in, est. Aliquizzle erat dang. Donizzle pizzle shiznit turpizzle. Shit aliquam. Crizzle odio urna, its fo rizzle izzle, da bomb vitae, break it down sed, fo. Praesent things orci, shiznit nizzle, sodalizzle go to hizzle, shizzlin dizzle fo shizzle, orci.</p>
+        <a href="#top" class='top'>top</a><br/>
+        <p id="L5">Sure interdum. Suspendisse sizzle. Maecenizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Etizzle elit ante, stuff quizzle, ullamcorper izzle, phat izzle, pimpin'. Morbi fo shizzle izzle. Duis felis. Fo shizzle my nizzle fizzle, boom shackalack vitae get down get down uhuh ... yih!, its fo rizzle mi bow wow wow felis, sizzle laorizzle pizzle enizzle vel augue. Curabitur consequizzle you son of a bizzle vizzle elit. Fo pimpin' dolor ass libero. Pimpin' placerizzle, metus fo shizzle mah nizzle fo rizzle, mah home g-dizzle boom shackalack lacinia, black sheezy pharetra tortizzle, mah nizzle luctus risus est phat est.</p>
+        <a href="#top" class='top'>top</a><br/>
+        <p id="L6">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
+        <a href="#top" class='top'>top</a><br/>
+        <p id="L7">Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead.</p>
+        <a href="#top" class='top'>top</a><br/>
+        <img src="http://PLACEKITTEN.com/g/600/1300" /><br/>
+        <a href="#top" class='top'>top</a><br/>
+    </div>
+</body>
+</html>

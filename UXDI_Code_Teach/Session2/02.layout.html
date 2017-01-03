@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout Test</title>
+	<style type="text/css">
+		body{font-family:sans-serif;margin:0;}
+		header{
+			position:absolute;
+			top:0;
+			left:0;
+			width:100vw;
+			height:75px;
+			background-color:orange;
+			padding-left:2rem;
+			z-index:1;
+		}
+		nav{
+			position:absolute;
+			padding-top:75px;
+			left:0;
+			width:22vw;
+			background-color:#eeeeee;
+			height:75vh;
+			margin:0;
+			border:0;
+			}
+		nav ul{list-style:none;}
+		nav li{}
+		article{
+			position:absolute;
+			left:20vw;
+			top:75px;
+			width:75vw;
+			margin:0;
+			border:0;
+			padding-left:2em;
+
+    		}
+
+		footer{
+			position:fixed;
+			bottom:0;
+			left:0;
+			width:100vw;
+			background-color:black;
+			color:orange; 
+			padding: 2em;
+  			height:4em;
+  			z-index:1;
+  			}	
+	</style>
+</head>
+<body>
+<header><h1>This is the page header</h1></header>
+<nav>
+	<ul>
+		<li>London</li>
+		<li>Prague</li>
+		<li>San Francisco</li>
+	</ul>
+</nav>
+<article>
+	<h1>London</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</article>
+<footer>Copyright your name here 2015</footer>
+</body>
+</html>

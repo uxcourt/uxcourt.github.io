@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery dynamic header</title>
+    <style>
+        .bodyContent {
+            font-family: 'Avenir',  'Helvetica', 'san-serif';
+            padding-left:10vw;
+            padding-right: 10vw;
+            position:relative;
+            top:270px;
+            z-index:-1;
+        }
+        header {
+            background-color: #333; 
+            /*margin:0;*/
+            position:fixed;
+            top:0;left:0;right:0;
+        }
+        body{
+            padding-top:0;
+            padding-left:0;
+            padding-right:0;
+            margin:0;
+        }
+        header img{
+            width:20vw;
+        }
+        header a {
+            color: #fff;
+        }
+        header li {
+            list-style:none;
+            display:inline;
+            padding:5vw;
+        }
+        header ul{margin-top:0;}
+
+    </style>
+    <script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+
+</head>
+<body>
+    <div id='top'></div>
+    <header id='header'><ul><li><a href="#"><img src="http://PLACEKITTEN.com/g/700/700" id="kitty"/></a></li><li><a href="#L0">HIPSTER</a></li><li><a href="#L2">HILLBILLY</a></li><li><a href="#L4">GANGSTA</a></li><li><a href="#L6">ZOMBIE</a></li></ul></header>
+    <div class="bodyContent">
+        <p id="L0">Sriracha Bushwick heirloom, kogi meditation salvia cold-pressed tilde leggings farm-to-table gluten-free. Four loko tousled paleo Echo Park, twee +1 semiotics Bushwick cliche typewriter lo-fi pour-over VHS four dollar toast. Letterpress twee semiotics, tilde cold-pressed wayfarers Neutra meditation Kickstarter 3 wolf moon lo-fi mixtape normcore. Carles listicle tote bag, PBR&B ennui letterpress mustache. Put a bird on it authentic skateboard fanny pack, pug whatever brunch biodiesel health goth seitan actually VHS iPhone. Single-origin coffee pop-up yr freegan brunch irony. Cronut Williamsburg aesthetic shabby chic.</p>
+
+        <p id="L1">Tofu gastropub art party next level. Scenester polaroid ennui, tilde food truck iPhone selvage. Slow-carb PBR cold-pressed, gentrify cred swag irony fashion axe. Scenester art party Pinterest, Wes Anderson sustainable post-ironic irony meditation yr food truck tattooed jean shorts direct trade cronut health goth. Hashtag tousled banh mi Williamsburg kogi single-origin coffee, Thundercats umami Bushwick tilde forage kale chips pop-up sriracha. Blue Bottle kitsch hella taxidermy try-hard, migas craft beer mlkshk stumptown heirloom Thundercats Pinterest. 3 wolf moon fingerstache flexitarian selvage Blue Bottle dreamcatcher.</p> 
+        <a href="#top">top</a>
+        <p id="L2">Ain't no lie poor boy weevil rambling five dollars hellhounds on my track scratching out dough the sooner I will marry the cuckoo constant sorrow. Troublin' mind! The buggies and the hacks all formed in line they call The Cannonball don't belong to you. Loved another man? Ain't laid an egg since way last spring Juney bug I woke next morning 'bout half past nine aces backed with eights. When I'm gone Uncle John, rye whiskey hang your head and cry. All you rounders in bed with a hog-eyed man cluck old hen! And I ain't comin' back run buried in the ground shady grove!</p>
+
+        <p id="L3">Work one day. Walking boss nine-pound hammer out in the kitchen o'er Jordan coming down the track standing on the corner soldier's joy, troublin' mind the cuckoo? Willie shady grove, troublin' mind rye whiskey, black as coal weevil lonesome hoecake in bed with a hog-eyed man! Run down to the river the other one round my girl Uncle John handsome and I ain't comin' back sun would never shine work one day hopalong, sugar baby hopalong fiddle turkey in the straw milked her in a gourd.</p>   
+        <a href="#top">top</a>
+        <p id="L4">Gizzle quizzle crunk. Donizzle ante. Maecenas placerat maurizzle bling bling lectus. Black izzle we gonna chung.  izzle tortizzle fo shizzle my nizzle tellivizzle crazy sheezy. Lorem ipsizzle dolor sizzle amet, consectetizzle for sure elizzle. Curabitur elizzle shit, crunk shut the shizzle up, for sure stuff, cool in, est. Aliquizzle erat dang. Donizzle pizzle shiznit turpizzle. Shit aliquam. Crizzle odio urna, its fo rizzle izzle, da bomb vitae, break it down sed, fo. Praesent things orci, shiznit nizzle, sodalizzle go to hizzle, shizzlin dizzle fo shizzle, orci.</p>
+        <a href="#top">top</a>
+        <p id="L5">Sure interdum. Suspendisse sizzle. Maecenizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Etizzle elit ante, stuff quizzle, ullamcorper izzle, phat izzle, pimpin'. Morbi fo shizzle izzle. Duis felis. Fo shizzle my nizzle fizzle, boom shackalack vitae get down get down uhuh ... yih!, its fo rizzle mi bow wow wow felis, sizzle laorizzle pizzle enizzle vel augue. Curabitur consequizzle you son of a bizzle vizzle elit. Fo pimpin' dolor ass libero. Pimpin' placerizzle, metus fo shizzle mah nizzle fo rizzle, mah home g-dizzle boom shackalack lacinia, black sheezy pharetra tortizzle, mah nizzle luctus risus est phat est.</p>
+        <a href="#top">top</a>
+        <p id="L6">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
+        <a href="#top">top</a>
+        <p id="L7">Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead.</p>
+        <a href="#top">top</a><br/>
+        <img src="http://PLACEKITTEN.com/g/600/1300" /><br/>
+        <a href="#top">top</a>
+    </div>
+</body>
+</html>

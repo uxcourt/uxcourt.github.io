@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form-to-Email</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+        <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+</head>
+<body>
+<div class="container">
+	<div id="FormResults"></div>
+</div>
+</body>
+	<script type="text/javascript">
+	function valueWriter(){
+		/* this exact same script didn't work when it was loaded in a separate js file; probably something related to resolving the reference to document, but when I put in break points and stepped through the code, it worked. Not wanting to control for that race condition, I just load it into the HTML here */
+		/*inputEmail=A%40b.c&inputPassword=asdfasdas&exampleInputFile=item4.html*/
+		var queryString = window.location.search.replace(/^\?/, '');
+		var formArray = queryString.split('&');
+		var userMail1 = formArray[0].split('=');
+		var password1 = formArray[1].split('=');
+		var filePath1 = formArray[2].split('=');
+		document.getElementById('FormResults').innerHTML = 'User Account = ' + decodeURIComponent(userMail1[1]) + '<br/>Password = ' + password1[1] + '<br/>File Path = ' + decodeURIComponent(filePath1[1]);
+	}
+	valueWriter();
+	</script>
+</html>
