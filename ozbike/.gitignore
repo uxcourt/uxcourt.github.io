@@ -42,11 +42,11 @@
 
 # Movies and Photos #
 ######################
-*.MOV
-*.mov
-*.mp4
-*.jpg
-*.JPG
+#*.MOV
+#*.mov
+#*.mp4
+#*.jpg
+#*.JPG
 
 
 # Logs and databases #
