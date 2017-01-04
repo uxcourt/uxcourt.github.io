@@ -199,7 +199,7 @@ function routeNext(nD) {
         //trigger the click event of the next position
         google.maps.event.trigger(markerS[nextDisplay], "click");
         map.setCenter(markerS[nextDisplay].position);
-        document.getElementById('appNav').style.top:0;
+        document.getElementById('appNav').style.top=0;
     }
     else {
         //call this function again to increment by one
@@ -215,7 +215,7 @@ function routePvs(pD) {
         //trigger the click event of the previous position
         google.maps.event.trigger(markerS[pvsDisplay], "click");
         map.setCenter(markerS[pvsDisplay].position);
-        document.getElementById('appNav').style.top:0;
+        document.getElementById('appNav').style.top=0;
     }
     else {
         //call this function again to decrement by one
