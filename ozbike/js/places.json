@@ -26,19 +26,19 @@
 		"caption": ""
 	}],
 	"videos": [{
-		"url": "images/videos/20140906-09-52-45-Pro.mp4",
+		"url": "images/videos/20140906-09-52-45-Pro.mov",
 		"caption": ""
 	}, {
-		"url": "images/videos/20140906-09-53-38-Pro.mp4",
+		"url": "images/videos/20140906-09-53-38-Pro.mov",
 		"caption": ""
 	}, {
-		"url": "images/videos/20140906-09-54-01-Pro.mp4",
+		"url": "images/videos/20140906-09-54-01-Pro.mov",
 		"caption": ""
 	}, {
-		"url": "images/videos/20140906-09-55-19-Pro.mp4",
+		"url": "images/videos/20140906-09-55-19-Pro.mov",
 		"caption": ""
 	}, {
-		"url": "images/videos/20140906-09-56-14-Pro.mp4",
+		"url": "images/videos/20140906-09-56-14-Pro.mov",
 		"caption": ""
 	}]
 }, {
@@ -76,8 +76,8 @@
 }, {
 	"placeName": "Ferry to Fraser Island",
 	"type": "pix",
-	"lat": -25.80837,
-	"lng": 153.0451,
+	"lat": -25.8090851,
+	"lng": 153.0474644,
 	"date": "2014-09-07T09:41:00+10:00",
 	"notes": [{
 		"note": "With our rented 4x4 we got in the queue of people bound for the island. The early morning clearing was giving way to clouds."
@@ -993,7 +993,7 @@
 		"caption": ""
 	}],
 	"videos": [{
-		"url": "images/videos/20140914-16-44-39-Pro.mp4",
+		"url": "images/videos/20140914-16-44-39-Pro.mov",
 		"caption": "Tango is everywhere."
 	}]
 }, {
@@ -1065,7 +1065,7 @@
 		"caption": "Ian and I took a moderately drunk walk after setting up camp."
 	}],
 	"videos": [{
-		"url": "images/videos/20140916-07-16-24-Pro.mp4",
+		"url": "images/videos/20140916-07-16-24-Pro.mov",
 		"caption": "The sound of 7 AM."
 	}]
 }, {
@@ -1451,13 +1451,13 @@
 		"caption": ""
 	}],
 	"videos": [{
-		"url": "images/videos/20140920-07-42-43-Pro.mp4",
+		"url": "images/videos/20140920-07-42-43-Pro.mov",
 		"caption": ""
 	}, {
-		"url": "images/videos/20140920-07-44-08-Pro.mp4",
+		"url": "images/videos/20140920-07-44-08-Pro.mov",
 		"caption": ""
 	}, {
-		"url": "images/videos/20140920-07-45-00-Pro.mp4",
+		"url": "images/videos/20140920-07-45-00-Pro.mov",
 		"caption": ""
 	}, {
 		"url": "images/videos/20140920-08-00-00.MOV",
