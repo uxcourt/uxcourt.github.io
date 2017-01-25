@@ -1,0 +1,119 @@
+﻿html, body {
+  height: 100%;
+  margin: 0;
+  font-family:sans-serif
+}
+#map{
+  margin: 0;
+  width:100vw;height:100vh;
+  /*margin-left:66vw;*/
+  transition:width 1.5s;
+  position:relative;
+  top:-50vh;
+  }
+#info{
+    position:absolute;
+    z-index:503;
+    background-color: rgba(255, 255, 255, 0.7);
+    top:15vh;
+    left:15vw;
+    padding:2em;
+    transition:all 1.5s;
+    width:44vw;
+    color:#333;
+    display:block;
+}
+#appNav{
+    position:fixed;
+    z-index:504;
+    top:75px;
+    left:0;
+    width:87px; 
+    transition:top 1.5s;
+    /*background-color:rgba(225,225,225,.6); */
+    }
+#NoStreet{
+    position:fixed;top:94px;left:61px;display:none;
+}
+#appNav.nostreet #NoStreet{
+    display:block;
+}
+#appNav.yesstreet #NoStreet{
+    display:none;
+}
+#pix{
+    position:absolute;
+    top:10vh;
+    height:90vh;
+    /*overflow:scroll;*/
+    z-index:502;
+    width:80vw;
+    transition:width 1.5s;
+    display:none;
+    
+
+}
+#date{
+    font-family:'serif';
+    font-style:italic;
+    font-weight:500;
+}
+.OneDigitID{
+    padding-left:.25em;
+}
+#pix img {
+    width:70vw;
+}
+/*#info_view{left:0}*/
+#street_view{height:50vh;z-index:490}
+#notStreet {
+    position:relative;
+    top:-150vh;height:100vh;
+    z-index:501;
+    background-color:rgba(0,0,0,0.5);
+    transition:top 1.5s;
+    padding-left:10vw;
+}
+#info H1{margin-top:-.25em;margin-bottom:.25em;padding-right:1em;}
+#placeID{
+    position:relative;
+    top:7px;left:33px;
+
+}
+#placeIDbox{
+    position:absolute;
+    top:2em;
+    right:0;
+    width:80px;height:49px;
+    background-image: url('../images/spotlight-poi-dotless.png');
+    background-repeat: no-repeat;
+    overflow:visible;
+    background-position: 15px -11px;
+}
+#placeIDbox.camp{
+    background-image: url('../images/camping.png');
+    background-position: 16px -20px;
+}
+#placeIDbox.lodging{
+    background-image: url('../images/lodging.png');
+    background-position: 16px -18px;
+}
+#placeIDbox.route{
+    background-image: url('../images/route.png');
+        background-position: 15px -19px;
+}
+.customVid{position:relative}
+.overlayPlay{
+    position: absolute;
+    top: 30%;
+    left: 39%;
+    width:25%!important;
+    z-index:501;
+    display:block;
+}
+.caption{
+    display: inline-block;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+.ncaption{display:none;}
