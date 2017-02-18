@@ -10,6 +10,7 @@
   transition:width 1.5s;
   position:relative;
   top:-50vh;
+  z-index:502;
   }
 #info{
     position:absolute;
@@ -70,7 +71,7 @@
     position:relative;
     top:-150vh;height:100vh;
     z-index:501;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0);/*eliminating shadow box on notStreet*/
     transition:top 1.5s;
     padding-left:10vw;
 }

@@ -6,10 +6,14 @@ request.responseType = 'json';
 request.send();
 //added to check if the data has returned correctly
 request.addEventListener("readystatechange", processRequest, false);
+/*/////////////////////////////////////////////////////////////////////////////////////////  GLOBAL VARIABLES  //*/
 var positions, map, directionsDisplay, directionsService, currentMarker;
-/*
-the cookie works, but still won't allow a user to share a point in the journey with somebody else.
-How to allow a user to copy and paste a functioning URL to one point in the journey?*/
+//guessing the size of the data set since the json hasn't fully loaded yet. This might be moved to avoid guessing
+var markerS = new Array(200);
+var LatLng;
+/* never used; stored here in case I wanted to do a calculator displaying day one, day two, etc.
+var baseDate = new Date;
+baseDate = '20140903T01:30:00+10:00';*/
 //these changes made to allow Google Analytics to exist in the cookie too
 var SplitCookie = document.cookie.split(';');
 for (i = 0; i < SplitCookie.length; i++) {
@@ -20,12 +24,8 @@ for (i = 0; i < SplitCookie.length; i++) {
 if (currentMarker==undefined){
     currentMarker = 0;
 }
-//guessing the size of the data set since the json hasn't fully loaded yet. This might be moved to avoid guessing
-var markerS= new Array(200);
-var LatLng;
-/* never used; stored here in case I wanted to do a calculator displaying day one, day two, etc.
-var baseDate = new Date;
-baseDate = '20140903T01:30:00+10:00';*/
+
+
 
 function processRequest(e) {
     //if the file is completely loaded, and wasn't an error,
@@ -42,8 +42,8 @@ function processRequest(e) {
 function initMap() {
     //pausecomp(1000);//wait a second for the json to load. There's got to be a better way. This still fails while Chrome's debugging tools are open, because the JSON data is loaded into the cache.
     //set up the route tracing routines
-    directionsService = new google.maps.DirectionsService();
-    directionsDisplay = new google.maps.DirectionsRenderer();
+    //directionsService = new google.maps.DirectionsService();
+    //directionsDisplay = new google.maps.DirectionsRenderer();
     //initialize the map, center it on point 0
     map = new google.maps.Map(document.getElementById('map'), {
         center: new google.maps.LatLng(positions[currentMarker].lat, positions[currentMarker].lng),
@@ -51,7 +51,7 @@ function initMap() {
         mapTypeId: 'terrain',
     });
     //bind the route tracer to the map
-    directionsDisplay.setMap(map);
+    //directionsDisplay.setMap(map);
     //trace the route
     /*after a LOT of effort, I got the directions to render on the map, but there's a 
     dealbreaker problem: the route gmaps calculates is not the route we rode. 
@@ -64,7 +64,7 @@ function initMap() {
 
     //create a marker on the map for each position in the json file
     for (i = 0; i < positions.length; i++) {
-        var marker1, mTitle, mElevation;
+        var markerVAR, mTitle, mElevation;
         mTitle = positions[i].placeName;
         
         if(positions[i].type=='lodging'){
@@ -78,7 +78,7 @@ function initMap() {
         }
         else{iconCustom=null}
         //mElevation=https://maps.googleapis.com/maps/api/elevation/json?locations=positions[i].lat,positions[i].lng&key=AIzaSyCVgy4lisCmEqly-06daUuSlPpGerAFQfo;
-        marker1 = new google.maps.Marker({
+        markerVAR = new google.maps.Marker({
             position: new google.maps.LatLng(positions[i].lat,positions[i].lng),
             map: map,
             title: mTitle,
@@ -91,11 +91,15 @@ function initMap() {
             
 
         })
-        markerClickAdd(marker1, positions);
-        markerS[i]=marker1;
+        //Add the click event handler to the marker
+        markerClickAdd(markerVAR, positions);
+        //store the marker and its handler in the array
+        markerS[i]=markerVAR;
         //http://econym.org.uk/gmap/example_categories.htm 
     }
+    //rely on the click event to set up the right collection of text and media
     google.maps.event.trigger(markerS[currentMarker], "click");
+    //make the map full screen width
     document.getElementById('map').style.width = '100vw';
 }
 function markerClickAdd(m, positions) {
@@ -154,6 +158,7 @@ function createStreetView(pos) {
     var panorama = new google.maps.StreetViewPanorama(document.getElementById('street_view'), { position: pos, mode: 'html5', visible: true });
     map.setStreetView(panorama);
 }
+
 function destroyStreetView() {
     /*the setOptions command works only if pegman has not been dropped on the map.
     streetViewControl:false only removes pegman if he's been already placed in the session
@@ -163,10 +168,13 @@ function destroyStreetView() {
     //map.streetView = false;
     document.getElementById('street_view').innerHTML = '';
     document.getElementById('notStreet').style.top = '-150vh';
+    document.getElementById('map').style.top = '-150vh';
     document.getElementById('strToggler').value = "Open Street";
+    map.panTo(new google.maps.LatLng(positions[currentMarker].lat, positions[currentMarker].lng));
 }
+/*rename this closeInfo*/
 function closeNotStreet() {
-    document.getElementById('notStreet').style.display='none';
+    document.getElementById('info').style.display='none';
 }
 function calcRoute() {
     var start = positions[0].lat+","+positions[0].lng;
@@ -229,25 +237,34 @@ function routePvs(pD) {
     }
     destroyStreetView()
 }
+/*rename this function to TogglePix*/
 function ToggleNotStreet() {
-    if (document.getElementById('notStreet').style.display == 'block') {
-        document.getElementById('notStreet').style.display = 'none';
-        document.getElementById('notStreetToggler').title = "Show Information";
-        /*document.getElementById('pix').style.width = '100vw';
+    if (document.getElementById('pix').style.display == 'block') {
+        document.getElementById('pix').style.display = 'none';
+        document.getElementById('notStreetToggler').title = "Show Media";
+        if (document.getElementById('info').style.display == 'none') {
+            document.getElementById('notStreet').style.display ='none';
+        }
+        /*document.getElementById('notStreet').style.display = 'none';
+        document.getElementById('pix').style.width = '100vw';
         document.getElementById('info').style.width = '60vw';*/
         //document.getElementById('street_view').style.position='relative';
     }
     else {
-        document.getElementById('notStreet').style.display = 'block';
-        document.getElementById('notStreetToggler').title = "Hide Information";
         document.getElementById('pix').style.display = 'block';
+        document.getElementById('notStreetToggler').title = "Hide Media";
+        document.getElementById('notStreet').style.backgroundColor = 'rgba(0,0,0,0.5)';
+        document.getElementById('notStreet').style.display = 'block';
+        //document.getElementById('pix').style.display = 'block';
         /*document.getElementById('pix').style.width = '100vw';
         document.getElementById('info').style.width = '60vw';*/
     }
 }
 function ToggleText() {
     if (document.getElementById('info').style.display=='none') {
-        document.getElementById('info').style.display='block';
+        document.getElementById('info').style.display = 'block';
+        if (document.getElementById('notStreet').style.display == 'none') {
+            document.getElementById('notStreet').style.display ='block'};
         document.getElementById('txtToggler').title = "Hide Text";
         var s = document.getElementsByClassName('ncaption')
         for (i =s.length-1; i >=0 ;i--){
@@ -258,6 +275,9 @@ function ToggleText() {
     else {
         document.getElementById('info').style.display='none';
         document.getElementById('txtToggler').title = "Show Text";
+        if (document.getElementById('pix').style.display == 'none') {
+            document.getElementById('notStreet').style.display = 'none';
+        }
         var s = document.getElementsByClassName('caption')
         for (i=s.length-1;i>=0;i--){
             s[i].className = "ncaption";
@@ -273,9 +293,9 @@ function ToggleStreet(){
         document.getElementById('appNav').style.top="50vh";
     }
     else {
-        destroyStreetView();
         document.getElementById('strToggler').title = "Show Street";
-        document.getElementById('appNav').style.top="0";
+        document.getElementById('appNav').style.top = "0";
+        destroyStreetView();
     }
 }
 function pausecomp(ms) {
